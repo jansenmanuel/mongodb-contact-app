@@ -1,0 +1,14 @@
+<h1>Hello World!</h1>
+
+<h3>Employee List</h3>
+<% if (employees.length < 1) { %>
+    <p>No employee data yet</p>
+    <% } else { %>
+        <% employees.forEach(emp=> {%>
+            <ul>
+                <li>Nama : <%= emp.name %>
+                </li>
+                <li>Position : <%= emp.position %>
+                </li>
+            </ul>
+            <% }) }%>
